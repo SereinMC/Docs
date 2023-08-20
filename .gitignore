@@ -1,1 +1,3 @@
 node_modules
+.directory
+pnpm-lock.yaml
