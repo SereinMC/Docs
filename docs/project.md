@@ -34,8 +34,7 @@ serein init -y
 ├── node_modules
 ├── behavior_packs
 │   ├── manifest.json
-│   ├── pack_icon.png (将会根据资源包名称的 hash 随机生成)
-│   └── scripts (用以打包的 scripts 文件夹)
+│   └── pack_icon.png (将会根据资源包名称的 hash 随机生成)
 ├── resource_packs (可选)
 │   ├── manifest.json
 │   └── pack_icon.png (将会根据资源包名称的 hash 随机生成)
@@ -43,9 +42,9 @@ serein init -y
 │   └── main.js/ts (或者用户指定的 entry 文件)
 ├── package.json
 ├── gulpfile.js (自动构建流程有关文件)
-└── tsconfig.json (仅选择 Typescript 语言时)
+├── tsconfig.json (仅选择 Typescript 语言时)
 ├── .serein.json (Serein 的信息文件)
-├── .mcattributes (禁用 vscode 官方插件的警告)
+└── .mcattributes (禁用 vscode 官方插件的警告)
 
 ```
 
@@ -59,9 +58,9 @@ serein init -y
 
 ### 先决条件
 
-我们对导入 **Serein** 的项目有这样几点要求：
+我们对导入 **Serein** 的项目有这样几点提醒：
 
--   ❯ 项目的行为包文件夹 (即官方文档中的 `behavior_packs`) 不是资源包的顶层，这对打包工具的适配来说是 <font color="red">地狱级别的</font> ！
+-   ❯ 项目的行为包文件夹 (即官方文档中的 `behavior_packs`) 不要作为资源包的顶层，这对打包工具的适配来说是 <font color="red">地狱级别的</font> ！
 
     比如这样的文件布局就是不合法的（在资源包的顶层文件夹）：
 
@@ -82,15 +81,13 @@ serein init -y
     └── package.json
     ```
 
--   ❯ 拥有自己编写的 **gulpfile**
+-   ❯ 没有拥有自己编写的 **gulpfile**
 
     如果您曾经阅读过 [微软的官方 starter 文章](https://learn.microsoft.com/en-us/minecraft/creator/documents/scriptinggettingstarted)，那可能已经学习了 **gulp** 工具的使用，并且已经根据自己的需求独自添加了一些内容 ~~（如果使用了但是没动过 `gulpfile.js` 的话是没关系的，我们的 `gulpfile.js` 比原版强的多了 XD）~~，那么下面的内容就需要注意了。
 
-    这种情况下 **Serein** 生成的新 `gulpfile.js` 可能会覆盖您之前的编写的文件，一个推荐的解决方式是先对您现有的 `gulpfile.js` 进行备份，后续再添加到 **Serein** 生成的那份里面。
+    这种情况下 **Serein** 生成的新 `gulpfile.js` 可能会覆盖您之前的编写的文件。
 
-    -   ❯❯ **gulpfile** 编辑提示
-
-        **Serein** 生成的 `gulpfile.js` 中会把包体信息（如行为包路径，脚本路径等）在运行之初提供，比官方版本的更加灵活，详细内容请看文件开头的信息部分！
+    幸运的是如果已有 `gulpfile.js`，**Serein** 将会询问你是否覆盖并可以帮助您备份，您可以再根据自己的情况将之前的功能添加到新的 `gulpfile.js` 中（我们的 `gulpfile.js` 比官方的更加适于编辑）。
 
 ### 导入流程
 
