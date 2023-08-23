@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
 	title: 'Serein Documents',
 	description: 'Serein Documents',
+	base: '/Docs/',
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		socialLinks: [{ icon: 'github', link: 'https://github.com/SereinMC/serein' }]
