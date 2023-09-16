@@ -9,9 +9,6 @@ hero:
         - theme: brand
           text: Getting start
           link: /intro
-        - theme: alt
-          text: Guide
-          link: /guide
 
 features:
     - title: Efficiency 🚀
