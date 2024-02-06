@@ -4,7 +4,7 @@ outline: [2, 3]
 
 # Quick Start
 
-Make sure you have a latest LTS/Current version of **Node.js**.
+Make sure you have a latest LTS/Current version of **[Node.js®](https://nodejs.org/)**.
 
 You can install **Serein** and **gulp-cli** (a required global dependency for **Serein**) using the **npm** tool.
 

@@ -41,8 +41,20 @@ export default defineConfig({
 					{ text: 'Home', link: '/en/' },
 					{ text: 'Guideline', link: '/en/intro' }
 				],
+				sidebar: [
+					{
+						text: "Serein Documents",
+						items: [
+							{ text: "Installation and Configuration", link: "/en/intro" },
+							{ text: "Creating or Importing Projects", link: "/en/project" },
+							{ text: "Building and Packaging Resource Packs", link: "/en/build" },
+							{ text: "Module Management", link: "/en/module" },
+							{ text: "Configuration File Features", link: "/en/info" }
+						]
+					}
+				]
+
 			}
-			// other locale specific properties...
 		}
 	}
 });
