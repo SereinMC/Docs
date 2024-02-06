@@ -4,3 +4,6 @@ dist
 pnpm-lock.yaml
 package-lock.json
 bun.lockb
+
+docs/.vitepress/cache
+docs/.vitepress/dist

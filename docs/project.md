@@ -106,5 +106,5 @@ serein adapt
 **Serein** 可能还会在适配项目时做出以下行为，请关注这些行为是否会影响您：
 
 -   ❯ 将 `package.json` 中项目的 `type` 属性改为 `module`。
--   ❯ 将 `package.json` 中 `depencies` 里已存在的 `@minecraft` 开头的依赖及自动打包相关的依赖迁移到 `devDepencies` 中。
+-   ❯ 将 `package.json` 中 `dependencies` 里已存在的 `@minecraft` 开头的依赖及自动打包相关的依赖迁移到 `devDependencies` 中。
 -   ❯ 删除您行为包目录中 `manifest.json` 文件的注释。
