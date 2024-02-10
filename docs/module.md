@@ -1,37 +1,37 @@
-# 模块管理
+# Module Management
 
-## 切换模块版本
+## Switching Module Versions
 
-**Serein** 提供了 `switch` 或 `s` 来切换当前模块的版本。
+**Serein** provides the `switch` or `s` command to switch the version of the current module.
 
-您只需要在根目录执行：
+You only need to execute in the root directory:
 
 ```bash
 serein switch
 ```
 
-就可以交互式地切换依赖的版本。
+This allows you to interactively switch the version of dependencies.
 
-### 行为说明
+### Behavior Explanation
 
-**Serein** 可能还会在切换版本时做出以下行为，请关注这些行为是否会影响您：
+**Serein** might also perform the following actions when switching versions, please be aware of these actions as they might affect you:
 
--   ❯ 删除您行为包目录中 `manifest.json` 文件的注释。
+-   ❯ Remove comments from the `manifest.json` file in your behavior pack directory.
 
-## 增删模块依赖
+## Adding and Removing Module Dependencies
 
-**Serein** 提供了 `module` 或 `m` 来增删当前项目的模块依赖。
+**Serein** provides the `module` or `m` command to add or remove module dependencies for the current project.
 
-您只需要在根目录执行：
+You only need to execute in the root directory:
 
 ```bash
 serein module
 ```
 
-就可以交互式地当前项目的模块依赖。
+This allows you to interactively manage the module dependencies of the current project.
 
-### 行为说明
+### Behavior Explanation
 
-**Serein** 可能还会在增删模块依赖时做出以下行为，请关注这些行为是否会影响您：
+**Serein** might also perform the following actions when adding or removing module dependencies, please be aware of these actions as they might affect you:
 
--   ❯ 删除您行为包目录中 `manifest.json` 文件的注释。
+-   ❯ Remove comments from the `manifest.json` file in your behavior pack directory.
