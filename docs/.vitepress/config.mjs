@@ -10,46 +10,46 @@ export default defineConfig({
 		socialLinks: [{ icon: 'github', link: 'https://github.com/SereinMC/serein' }]
 	},
 	locales: {
-		root: {
+		'zh-CN': {
 			label: '简体中文',
 			lang: 'zh-CN',
+			link: '/zh-CN/',
 			themeConfig: {
 				nav: [
-					{ text: '首页', link: '/' },
-					{ text: '指南', link: '/intro' }
+					{ text: '首页', link: '/zh-CN/' },
+					{ text: '指南', link: '/zh-CN/intro' }
 				],
 				sidebar: [
 					{
 						text: 'Serein Documents',
 						items: [
-							{ text: '安装与配置', link: '/intro' },
-							{ text: '创建或导入项目', link: '/project' },
-							{ text: '构建和打包资源包', link: '/build' },
-							{ text: '模块管理', link: '/module' },
-							{ text: '配置文件功能', link: '/info' }
+							{ text: '安装与配置', link: '/zh-CN/intro' },
+							{ text: '创建或导入项目', link: '/zh-CN/project' },
+							{ text: '构建和打包资源包', link: '/zh-CN/build' },
+							{ text: '模块管理', link: '/zh-CN/module' },
+							{ text: '配置文件功能', link: '/zh-CN/info' }
 						]
 					}
 				],
 			}
 		},
-		en: {
+		root: {
 			label: 'English',
 			lang: 'en',
-			link: '/en/',
 			themeConfig: {
 				nav: [
-					{ text: 'Home', link: '/en/' },
-					{ text: 'Guideline', link: '/en/intro' }
+					{ text: 'Home', link: '/' },
+					{ text: 'Guideline', link: '/intro' }
 				],
 				sidebar: [
 					{
 						text: "Serein Documents",
 						items: [
-							{ text: "Installation and Configuration", link: "/en/intro" },
-							{ text: "Creating or Importing Projects", link: "/en/project" },
-							{ text: "Building and Packaging Resource Packs", link: "/en/build" },
-							{ text: "Module Management", link: "/en/module" },
-							{ text: "Configuration File Features", link: "/en/info" }
+							{ text: "Installation and Configuration", link: "/intro" },
+							{ text: "Creating or Importing Projects", link: "/project" },
+							{ text: "Building and Packaging Resource Packs", link: "/build" },
+							{ text: "Module Management", link: "/module" },
+							{ text: "Configuration File Features", link: "/info" }
 						]
 					}
 				]

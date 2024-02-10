@@ -2,23 +2,23 @@
 outline: [2, 3]
 ---
 
-# 构建和打包资源包
+# Building and Packaging Resource Packs
 
-## 构建资源包
+## Building Resource Packs
 
-**Serein** 提供了命令 `build` 或 `b` 来对当前项目的代码进行构建并生成资源包。
+**Serein** provides the command `build` or `b` to build the code of the current project and generate a resource pack.
 
-您可以在项目根目录这样做：
+You can do this in the project root directory:
 
 ```bash
 serein build
 ```
 
-接下来 **Serein** 将会使用 [esbuild](https://esbuild.github.io/) 与 [tsc](https://www.typescriptlang.org/)（语言为 Typescript 时）构建代码，并将资源包输出到配置文件指定的 `out` 目录中。
+Then **Serein** will use [esbuild](https://esbuild.github.io/) and [tsc](https://www.typescriptlang.org/) (when the language is TypeScript) to build the code and output the resource pack to the `out` directory specified in the configuration file.
 
-### 默认编译选项
+### Default Compilation Options
 
-**Serein** 将会按照以下默认配置编译或构建文件：
+**Serein** will compile or build the files according to the following default configuration:
 
 <details><summary>esbuild</summary>
 
@@ -55,56 +55,56 @@ serein build
 
 </details>
 
-### 自定义编译配置
+### Custom Compilation Configuration
 
-您可以按照 [配置文件功能](/info.html) 一节的方法增加或替换编译选项或更改默认的 `out` 目录。
+You can add or replace compilation options or change the default `out` directory by following the method described in the [Configuration File Features](/info.html) section.
 
-## 打包资源包
+## Packaging Resource Packs
 
-**Serein** 提供了命令 `pack` 或 `p` 来执行构建并将资源包打包为 `.mcpack` 文件。
+**Serein** provides the command `pack` or `p` to build and package the resource pack into a `.mcpack` file.
 
-您只需要在项目根目录执行：
+You just need to execute in the project root directory:
 
 ```bash
 serein pack
 ```
 
-就可以在配置文件指定的 `out` 目录构建一份打包后的 `.mcpack`。
+This will build and package a `.mcpack` in the `out` directory specified in the configuration file.
 
-构建部分与 [构建资源包](#构建资源包) 一节所描述的一致。
+The building part is consistent with the section described in [Building Resource Packs](#building-resource-packs).
 
-## 部署资源包
+## Deploying Resource Packs
 
 ::: warning
 
-该功能仅支持在 Windows/Linux(mcpelauncher) 有原生支持，如果您希望在其他平台使用该功能，请根据 [配置文件功能](/info.html) 一节的方法配置 `mc_dir` 的值来引导该命令。
+This feature is only natively supported on Windows/Linux(mcpelauncher). If you wish to use this feature on other platforms, please configure the value of `mc_dir` according to the method described in the [Configuration File Features](/info.html) section to guide this command.
 
 :::
 
-**Serein** 提供了命令 `deploy` 或 `d` 来部署项目。
+**Serein** provides the command `deploy` or `d` to deploy the project.
 
-您可以在根目录执行：
+You can execute in the root directory:
 
 ```bash
 serein deploy
 ```
 
-将目前的资源包构建并转移到游戏目录中部署。
+This will build and transfer the current resource pack for deployment in the game directory.
 
-构建部分与 [构建资源包](#构建资源包) 一节所描述的一致。
+The building part is consistent with the section described in [Building Resource Packs](#building-resource-packs).
 
-## 热部署资源包
+## Hot Deploying Resource Packs
 
-**Serein** 提供了命令 `watch` 或 `w` 来热部署项目。
+**Serein** provides the command `watch` or `w` for hot deploying the project.
 
-您可以在根目录执行：
+You can execute in the root directory:
 
 ```bash
 serein watch
 ```
 
-来启动热部署流程，当监听到行为包文件夹、资源包文件夹或脚本文件夹被修改后，资源包将会自动被构建并部署到游戏目录。
+To start the hot deployment process, the resource pack will be automatically built and deployed to the game directory when modifications to the behavior pack folder, resource pack folder, or script folder are detected.
 
-构建部分与 [构建资源包](#构建资源包) 一节所描述的一致。
+The building part is consistent with the section described in [Building Resource Packs](#building-resource-packs).
 
-部署部分与 [部署资源包](#部署资源包) 一节所描述的一致。
+The deployment part is consistent with the section described in [Deploying Resource Packs](#deploying-resource-packs).

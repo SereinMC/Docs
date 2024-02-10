@@ -8,7 +8,7 @@ hero:
     actions:
         - theme: brand
           text: Getting start
-          link: /en/intro
+          link: /zh-CN/intro
 
 features:
     - title: Efficiency 🚀
