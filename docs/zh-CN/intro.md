@@ -6,7 +6,7 @@ outline: [2, 3]
 
 确保您拥有 **[Node.js®](https://nodejs.org/)** 的稳定或更高的版本。
 
-您可以通过 **npm** 工具安装 **Serein** 与 **guli-cli**(**Serein** 的必须全局依赖)。
+您可以通过 **npm** 工具安装 **Serein** 与 **gulp-cli**(**Serein** 的必须全局依赖)。
 
 ```bash
 npm i @pureeval/serein gulp-cli -g
